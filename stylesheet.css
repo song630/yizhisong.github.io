@@ -131,5 +131,54 @@ h2 {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #F0F8FF;
+}
+
+#movingCell {
+  width: 200px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+#movingImage {
+  position: absolute;
+  height: 100%; /* Sets the height to match the cell */
+  width: auto; /* Maintain aspect ratio */
+  top: 0;
+  left: 0;
+}
+
+.moving-cell {
+  /* padding: 10px; */
+  /* padding-top:0;
+  padding-bottom:0; */
+  width: 25%; /* 25% of the table's width */
+  vertical-align: middle;
+  position: relative; /* Needed for absolute positioning of the image */
+  overflow: hidden; /*Hide parts of the image that overflow the cell*/
+}
+
+ .moving-image {
+  position: absolute;
+  vertical-align: middle;
+  height: 160px; 
+  width: auto; 
+  top: 5%;
+  left: 0;
+} 
+
+/* table td {
+  height: 240px; 
+} */
+
+.special-table td {
+  height: 180px; /*define the minimal height of the cell*/
+}
+
+.special-video-cell {
+  overflow: visible;
+  width: 25%; /* 25% of the table's width */
+  vertical-align: middle;
+  position: relative; /* Needed for absolute positioning of the image */
 }
