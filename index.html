@@ -25,8 +25,13 @@
                 <p>I am a research scientist working on Generative AI at Bytedance / Tiktok. I obtained my PhD in Computer Science from <a href="https://www.cs.purdue.edu/cgvlab/www/">CGVLab</a> at Purdue University, advised by Prof. <a href="https://www.cs.purdue.edu/homes/aliaga/">Daniel Aliaga</a>. Before coming to Purdue, I recieved my B.S. in Computer Science from Zhejiang University. I interned at <a href="https://www.qualcomm.com/">Qualcomm</a> in summer 2021, and worked as a research intern at <a href="https://research.adobe.com/">Adobe</a> in summer 2022 & 2023 & 2024. During my internships, I'm fortunate to work with Dr. <a href="https://menglin-wu.github.io/">Meng-Lin Wu</a>, Dr. <a href="https://zzutk.github.io/">Zhifei Zhang</a>, Dr. <a href="https://wxiong.me/">Wei Xiong</a> and Dr. <a href="https://sites.google.com/site/zhelin625/">Zhe Lin</a>.
                 </p>
                 <p>
-                  I’m interested in GenAI, with a strong focus on post-training and RL. My work includes building diffusion models for image & video generation, and improving MLLMs for image & video understanding.
+                  I’m interested in GenAI, with a strong focus on the following areas:
                 </p>
+                <ul>
+                  <li>Post-training and RL (GRPO, reward model design);</li>
+                  <li>Building diffusion models for image & video generation;</li>
+                  <li>Building interactive world models.</li>
+                </ul>
                 <p>
                   Please feel free to reach out if you're interested in research collaborations or internships.
                 </p>
@@ -54,6 +59,10 @@
   </tr>
 </tbody></table>
 <table width="100%" align="center" border="0" cellpadding="0"><tbody>
+  <tr>
+    <td style="padding-left:20px;width:10%;vertical-align:middle"> 05-2026 </td>
+    <td> We will release <a href="">ActWorld</a>, a world model that supports both flexible exploration and rich object interactions.</td>
+  </tr>
   <tr>
     <td style="padding-left:20px;width:10%;vertical-align:middle"> 03-2026 </td>
     <td> We release <a href="https://physalign.github.io/PhysAlign/">PhysAlign</a>, a video generation model that achieves strong physics coherence and physically plausible motions.</td>
@@ -126,6 +135,27 @@ class="special-table"
 style="width:100%;height:240px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 <tbody>
 
+     <!-- ActWorld -->
+    <tr>
+      <td class="moving-cell" style="padding:20px;padding-top:0;padding-bottom:0;width:25%;vertical-align:middle">
+        <a href="./images/ActWorld/teaser.png">
+        <img class="moving-image" src="./images/ActWorld/teaser.png" alt="Moving Image 1" style="vertical-align:middle">
+      </td>
+      <td style="padding:20px;padding-top:20px;padding-bottom:20px;width:75%;vertical-align:middle">
+        <p>
+        <papertitle><a href="">ActWorld: From Explorable to Interactive World Model via Action-Aware Memory</a></papertitle><br>
+        Zhexiao Xiong, <strong>Yizhi Song<sup>&dagger;</sup></strong>, Hao Kang, Qing Yan, et al. <br>
+        (<sup>&dagger;</sup> Mainly advising / Project lead) <br>
+        <span style="color: black;">Under Review</span> <br>
+        <a href="">PDF (coming soon!)</a>
+        /
+        <a href="">Project Page (coming soon!)</a>
+        /
+        <a href="">Code (coming soon!)</a>
+        <p><grey> We present ActWorld, a real-time interactive world model that unifies flexible <strong>navigation</strong> and <strong>rich object interaction</strong> in a single autoregressive framework, moving beyond navigation-centric worlds that are explorable but not truly actionable. We address the gap with a 100K interaction-dense video dataset and a hierarchical action-aware memory that preserves causally critical interaction frames across long rollouts, substantially improving interaction fidelity without sacrificing viewpoint control. </grey></p>
+      </td>
+    </tr>
+
     <!-- ThinkRL-Edit -->
     <tr>
       <td class="moving-cell" style="padding:20px;padding-top:0;padding-bottom:0;width:25%;vertical-align:middle">
@@ -142,7 +172,7 @@ style="width:100%;height:240px;border:0px;border-spacing:0px;border-collapse:sep
         <a href="https://echopluto.github.io/ThinkRL-page/">Project Page</a>
         /
         <a href="https://github.com/EchoPluto/ThinkRL-Edit">Code</a>
-        <p><grey> We propose ThinkRL-Edit, a reasoning-centric RL framework for instruction-driven image editing that explicitly separates visual reasoning from image synthesis. By introducing CoT based planning and reflection before generation, unbiased preference grouping across rewards, and a binary checklist–based instruction reward, our method enables deeper reasoning exploration and more stable optimization. </grey></p>
+        <p><grey> We propose ThinkRL-Edit, a <strong>reasoning-centric RL</strong> framework for instruction-driven image editing that explicitly separates visual reasoning from image synthesis. By introducing CoT based planning and reflection before generation, unbiased preference grouping across rewards, and a binary checklist–based instruction reward, our method enables deeper reasoning exploration and more stable optimization. </grey></p>
       </td>
     </tr>
 
@@ -173,7 +203,8 @@ style="width:100%;height:240px;border:0px;border-spacing:0px;border-collapse:sep
       <td style="padding:20px;padding-top:20px;padding-bottom:20px;width:75%;vertical-align:middle">
         <p>
         <papertitle><a href="https://hanghuacs.github.io/MMIG-Bench/">MMIG-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models</a></papertitle><br>
-        Hang Hua*, Ziyun Zeng*, <strong>Yizhi Song*</strong>, Yunlong Tang, Liu He, Daniel Aliaga, Wei Xiong, Jiebo Luo <br>
+        Hang Hua*, Ziyun Zeng*, <strong>Yizhi Song*<sup>&dagger;</sup></strong>, Yunlong Tang, Liu He, Daniel Aliaga, Wei Xiong, Jiebo Luo <br>
+        (<sup>&dagger;</sup> Mainly advising / Project lead) <br>
         <span style="color: red;">NeurIPS 2025</span> <br>
         <a href="https://arxiv.org/abs/2505.19415">PDF</a>
         /
